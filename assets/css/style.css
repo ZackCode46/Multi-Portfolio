@@ -1374,6 +1374,52 @@ footer p {
 /* MOBILE & RESPONSIVE FIX   */
 /* ========================= */
 
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 1.4rem;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: rgba(5, 8, 16, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  transform: translateY(-120%);
+  transition: .3s;
+  z-index: 400;
+}
+
+.mobile-menu a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* aktif */
+.mobile-menu.open {
+  transform: translateY(0);
+}
+
+/* show hamburger only di mobile */
+@media (max-width:768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
 
