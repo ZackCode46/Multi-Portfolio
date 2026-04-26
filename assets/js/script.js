@@ -183,50 +183,45 @@ const PROFILES = [
   // ══════════════════════════════════════════════════════════
   {
     id: 1,
-    name: "Rizky Pratama",
-    firstName: "Rizky",
-    lastName: "Pratama",
-    role: "Backend Developer & Cloud Engineer",
-    status: "Open to opportunities",
-    desc: "Building scalable, high-performance systems that power millions of users.",
+    name: "Aldivo Dwitama Yoven",
+    firstName: "Aldivo",
+    lastName: "Dwitama Yoven",
+    role: "Network Technician & IT Consultant",
+    status: "Open to Opportunities",
+    desc: "Delivering secure, efficient network solutions and IT guidance to keep systems stable, connected, and scalable",
     accent: "#7c3aed",
-    emoji: "☁️",
-    photo: "assets/profile2.jpg",    // ← ganti foto Rizky
-    stats: { projects: "8+", skills: "6+", exp: "2+" },
-    about: "Backend developer specializing in microservices architecture, cloud infrastructure, and high-performance APIs.",
+    emoji: "",
+    photo: "https://lh3.googleusercontent.com/rd-d/ALs6j_E3uy0pRZAjwtXee6ornwnn_onNlYSepaOS2mXxtJ3bdnlp-7VLD1g2k6vNphyoLeeWVjMdp188GWnvY8aqhl6Zu6KjKFRkSE212zoEPPSSJCPtbHI2QChUctq1RxgqRzYT3l59wW8uDgDUdd-tl1VcCOL31pE9GHrADPL8CjWz1Nib0wbuvuplTYa1dOIKowfEUS-daET2VNbpcq7HxYGScCN_JAb9MBxnmTEWEQWxtqZKNfUTdfIZPkzDX0QyPykwpr4dx8pr8w7FIa0nUL39AqkcsGE4jiBI9du0gOco0vQfSC4abz64kLu83ATIw34oNenQ4DKTM4bbjIgNSKv1et3K8xFLtFxl1Nf06YhXbkoW6X7poohZZZKG9ksUKiRffPLBf9AAzSYYE5bavin948XlQUEROWhGW10nYMYf8JwwTmE3SyE3sPJY5UfgIlA8ClH8hHdqARs0OdJOp8kYyHyWUIu8lFaNxgprgTIjGlFqp0F6c-vUDM3gvc2Cy1KZdKYT6Q9Jc8c93MvwB3BcW_vpEQUGa1oNVO9Dg6gac16-ygj5gmtcSXPIySB1vim67WdBj3sMAY2XbrjUO_CamVFiuKOyGaC5jJIZw-nFW6Wu2BeX9hzMwSucXXn0Br2XlHnwcH4LMVS07VgwCH3Yrw6-2E-cj66rCr2Pr121iN7keFyEkwSORu9IeSzasaqm7rNKvR31AGjIBo9H6GcHxITtj5PpNNqPqmpnijB4y_t7gBwNED5vUy1IbGmvtpIQGlVuvUGqCL1dV4HoeQadsFFt8mayC796vYU_mSinbaogHH-FecNEI2RJe5LwjXL4yVm2lRLRNhd7-z_ZSw3iohXeSUreu0OJTCOSzTb5WeGm35kBFlCkT7C6MhyI3HUSp0BuschO9jA--Youq8ZaSnFRBbt4EbN2GxZvNqio4uGZplSbCBez4mupQQXceL0K9oNGj12qviTpA0mWdcD9nlIntpuWO4aNyo-qoBlnfjWeIZTYth7qVOKRBri5vGlRjbShVfVne3NgM9vl8w3tmWr7dUNOIHaaRP8BQk5W3WusOr6oNYEIyzMr6zCZuxIX5EzQO1EkNs6AEaHrQjitNCIwpUfqq74WGjxZsEOoaw5Pcpzj=w1366-h607?auditContext=prefetch",    // ← ganti foto Rizky - siap di rumah
+    stats: { projects: "1+", skills: "6+", exp: "2+" },
+    about: "Network technician focused on infrastructure deployment, network security, and efficient IT operations.",
     education: [
-      { year: "2023 - Present", title: "Sistem Informasi", sub: "Semester 4 · GPA 3.8" },
-      { year: "2022", title: "AWS Cloud Practitioner", sub: "Certified" }
+      { year: "2024 - Present", title: "Teknik Komputer", sub: "Semester 4 · Active Student" },
     ],
     skills: [
-      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", pct: 90 },
-      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", pct: 88 },
-      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", pct: 75 },
-      { name: "AWS / GCP", icon: "☁️", pct: 82 },
+      { name: "HTML", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/html.jpeg", pct: 70 },
+      { name: "CSS", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/css.jpeg", pct: 70 },
+      { name: "Java Script", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/js.jpeg", pct: 30 },
+      { name: "Cisco Packet Tracer", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/OIP.jpg", pct: 90 },
       { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", pct: 85 },
-      { name: "GraphQL", icon: "🔗", pct: 88 },
+      { name: "WinBox", icon: "https://e7.pngegg.com/pngimages/651/667/png-clipart-mikrotik-routeros-computer-icons-mikrotik-routeros-computer-network-graphical-user-interface-thumbnail.png", pct: 90 },
     ],
     projects: [
-      { title: "API Gateway", desc: "High-performance API gateway handling 10k+ req/s.", tag: "Backend", img: "", emoji: "🔌", liveUrl: "#", srcUrl: "#" },
-      { title: "Real-time Chat", desc: "WebSocket chat with Redis pub/sub.", tag: "Fullstack", img: "", emoji: "💬", liveUrl: "#", srcUrl: "#" },
-      { title: "CI/CD Pipeline", desc: "Automated deployment with GitHub Actions + Docker.", tag: "DevOps", img: "", emoji: "🔄", liveUrl: "#", srcUrl: "#" },
-      { title: "Analytics Dashboard", desc: "Real-time event stream analytics.", tag: "Data", img: "", emoji: "📊", liveUrl: "#", srcUrl: "#" },
+      { title: "Cara menginstall zabbix di ubuntu", desc: "A tutorial to install zabbix in ubuntu to monitor their client.", tag: "Internet Provider", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLGnRQDY69LV-GnnJtopyX73hwPNOrslEd0g&s", emoji: "", liveUrl: "assets/projects/CARA MENGINSTALL ZABBIX DI UBUNTU 20.pdf", srcUrl: "assets/projects/CARA MENGINSTALL ZABBIX DI UBUNTU 20.pdf" },
     ],
     experience: [
-      { date: "2024 - Present", title: "Backend Engineer Intern", company: "Tech Startup Jakarta", desc: "Built RESTful microservices for financial transactions.", tags: ["Node.js", "PostgreSQL", "Docker"] },
-      { date: "2023", title: "Freelance Developer", company: "Various Clients", desc: "Built web apps and APIs for local businesses.", tags: ["Express.js", "MySQL"] },
+      { date: "2024 - Present", title: "College Student", company: "Universitas Gunadarma", desc: "College student in Universitas Gunadarma. Currently in 4th Semester", tags: ["Academic", "Student"] },
+      { date: "2023", title: "Internship Program", company: "PT. Sewiwi", desc: "Internship program for three months in the field of networks and services", tags: ["Networking", "Internet Provider", "Internship"] },
     ],
     contact: {
-      email: "rizky@email.com",
+      email: "divoyoven@gmail.com",
       socials: [
-        { label: "Email", value: "rizky@email.com", href: "mailto:rizky@email.com", icon: "📧" },
-        { label: "LinkedIn", value: "linkedin.com/in/rizky", href: "https://linkedin.com/in/rizky", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" },
-        { label: "GitHub", value: "github.com/rizky", href: "https://github.com/rizky", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-        { label: "Instagram", value: "@rizky.dev", href: "https://instagram.com/rizky", icon: "📸" },
+        { label: "Email", value: "divoyoven@gmail.com", href: "mailto:divoyoven@gmail.com", icon: "📧" },
+        { label: "GitHub", value: "github.com/Aldivo", href: "https://github.com/Aldivo", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+        { label: "Instagram", value: "@aldivodwitamay", href: "https://www.instagram.com/aldivodwitamay/", icon: "📸" },
       ]
     },
-    cvPath: "assets/cv/rizky-cv.pdf",
-    typing: ["Backend Dev", "Cloud Architect", "DevOps Engineer", "API Specialist"],
+    cvPath: "assets/ADYcv.pdf",
+    typing: ["Network Technician", "Network Architect", "AI Enthusiast"],
   },
 
   // ══════════════════════════════════════════════════════════
