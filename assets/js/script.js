@@ -1,3 +1,20 @@
+//INi buat mode hamburger di bagian toggle nav (jadi nanti di mobile ga hancur)
+// MOBILE MENU TOGGLE
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+
+if (menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+  });
+}
+
+// AUTO CLOSE PAS KLIK LINK
+document.querySelectorAll("#mobile-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+  });
+});
 // ╔══════════════════════════════════════════════════════════╗
 // ║           ⚙️  KONFIGURASI — Edit bagian ini!              ║
 // ╚══════════════════════════════════════════════════════════╝
@@ -65,7 +82,9 @@ const PROFILES = [
       { name: "Linux", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/linux.jpg", pct: 90 },
       { name: "Kuliax", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/kuliax.jpg", pct: 92 },
       { name: "Ubuntu", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/ubuntu.jpg", pct: 93 },
+      { name: "Prisma", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/prisma.jpg", pct: 96 },
       { name: "Node JS", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/node.jpg", pct: 94 },
+      { name: "C", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/c.jpg", pct: 86 },
       { name: "Type Script", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/type.jpg", pct: 94 },
       { name: "Tailwind", icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/tailwind.jpg", pct: 96 },
     ],
@@ -227,15 +246,15 @@ const PROFILES = [
   // ══════════════════════════════════════════════════════════
   {
     id: 2,
-    name: "Aisha Rahmawati",
-    firstName: "Aisha",
-    lastName: "Rahmawati",
+    name: "Aldo Fauzan Batubara",
+    firstName: "Aldo",
+    lastName: "Fauzan Batubara",
     role: "UI/UX Designer & Frontend Developer",
     status: "Available for freelance",
     desc: "Crafting beautiful digital experiences where pixels meet purpose.",
     accent: "#f472b6",
     emoji: "🎨",
-    photo: "assets/profile3.jpg",    // ← ganti foto Aisha
+    photo: "assets/aldo.jpeg",    // ← ganti foto Aisha
     stats: { projects: "12+", skills: "5+", exp: "2+" },
     about: "UI/UX designer with strong frontend background. I bridge design and engineering to create beautiful and functional interfaces.",
     education: [
@@ -262,13 +281,13 @@ const PROFILES = [
     contact: {
       email: "aisha@email.com",
       socials: [
-        { label: "Email", value: "aisha@email.com", href: "mailto:aisha@email.com", icon: "📧" },
+        { label: "Email", value: "aisha@email.com", href: "aldofauzanbatubara@gmail.com", icon: "📧" },
         { label: "LinkedIn", value: "linkedin.com/in/aisha", href: "https://linkedin.com/in/aisha", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" },
         { label: "GitHub", value: "github.com/aisha", href: "https://github.com/aisha", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-        { label: "Instagram", value: "@aisha.design", href: "https://instagram.com/aisha.design", icon: "📸" },
+        { label: "Instagram", value: "@aisha.design", href: "https://www.instagram.com/alddxzy?igsh=MXNiczAyZGd4ZWZxbw==", icon: "📸" },
       ]
     },
-    cvPath: "assets/cv/aisha-cv.pdf",
+    cvPath: "assets/projects/cv_aldo.pdf",
     typing: ["UI/UX Designer", "Frontend Dev", "Creative Technologist", "Design System Builder"],
   },
 
@@ -308,13 +327,31 @@ const PROFILES = [
       { date: "2024 - Present", title: "AI Research Assistant", company: "University Lab", desc: "Researching efficient architectures for edge deployment.", tags: ["PyTorch", "ONNX", "Raspberry Pi"] },
       { date: "2024", title: "Data Science Intern", company: "Analytics Firm", desc: "Built churn and demand forecasting models.", tags: ["Python", "Scikit-learn", "Tableau"] },
     ],
+     // ── KONTAK ────────────────────────────────────────────────────────────────
+    // icon sosmed: bisa emoji atau URL gambar PNG/SVG
     contact: {
-      email: "dimas@email.com",
+      email: "aldofauzanbatubara@gmail.com",
       socials: [
-        { label: "Email", value: "dimas@email.com", href: "mailto:dimas@email.com", icon: "📧" },
-        { label: "LinkedIn", value: "linkedin.com/in/dimas", href: "https://linkedin.com/in/dimas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" },
-        { label: "GitHub", value: "github.com/dimas", href: "https://github.com/dimas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-        { label: "Instagram", value: "@dimas.ai", href: "https://instagram.com/dimas.ai", icon: "📸" },
+        {
+          label: "Email",
+          value: "aldofauzanbatubara@gmail.com",
+          href: "mailto:aldofauzanbatubara@gmail.com",
+          icon: "https://cdn.jsdelivr.net/gh/ZackCode46/portfolioweb@main/assets/images/gmail.jpg"
+        },
+        {
+          label: "GitHub",
+          value: "github.com/AldoFauzanBatubaraa",
+          href: "https://github.com/AldoFauzanBatubaraa",
+          icon: "https://cdn.jsdelivr.net/gh/ZackCode46/portfolioweb@main/assets/images/github_icon.png"
+          // Atau: icon: "🐙"
+        },
+        {
+          label: "Instagram",
+          value: "@alddxyz",
+          href: "https://www.instagram.com/alddxzy?igsh=MXNiczAyZGd4ZWZxbw==",
+          icon: "https://raw.githubusercontent.com/ZackCode46/portfolioweb/main/assets/images/instagram-removebg-preview.png"
+          // Atau URL ikon instagram custom
+        },
       ]
     },
     cvPath: "assets/cv/dimas-cv.pdf",

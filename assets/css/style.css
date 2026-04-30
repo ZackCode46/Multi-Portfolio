@@ -1369,3 +1369,243 @@ footer p {
     right: 16px;
   }
 }
+
+/* ========================= */
+/* MOBILE & RESPONSIVE FIX   */
+/* ========================= */
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 1.4rem;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: rgba(5, 8, 16, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  transform: translateY(-120%);
+  transition: .3s;
+  z-index: 400;
+}
+
+.mobile-menu a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* aktif */
+.mobile-menu.open {
+  transform: translateY(0);
+}
+
+/* show hamburger only di mobile */
+@media (max-width:768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  section {
+    padding: 120px 6% 70px;
+  }
+
+  .hero-section {
+    gap: 40px;
+  }
+
+  .hero-name {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+  }
+
+  .hero-desc {
+    max-width: 100%;
+  }
+
+  .hero-stats {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .contact-grid {
+    gap: 24px;
+  }
+}
+
+
+/* Mobile Besar */
+@media (max-width: 768px) {
+
+  body {
+    cursor: default; /* matiin custom cursor biar ga bug di HP */
+  }
+
+  #cursor,
+  #cursor-ring {
+    display: none;
+  }
+
+  nav {
+    padding: 14px 5%;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+  }
+
+  .btn-ghost {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  section {
+    padding: 110px 5% 60px;
+  }
+
+  .hero-section {
+    gap: 30px;
+  }
+
+  .hero-name {
+    font-size: clamp(2rem, 7vw, 3rem);
+    letter-spacing: -1px;
+  }
+
+  .typing-wrap {
+    font-size: 1.1rem;
+  }
+
+  .hero-desc {
+    font-size: 0.85rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-stats {
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .stat-num {
+    font-size: 1.4rem;
+  }
+
+  .about-text {
+    font-size: 0.85rem;
+  }
+
+  .glass-card {
+    padding: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .tl-title {
+    font-size: 0.95rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-info p {
+    font-size: 0.85rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.85rem;
+    padding: 12px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* Mobile Kecil (HP jadul / layar sempit) */
+@media (max-width: 480px) {
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .typing-wrap {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-switcher {
+    padding: 6px;
+    gap: 6px;
+  }
+
+  .profile-btn {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  .chat-suggestions {
+    display: none; /* biar ga sempit */
+  }
+
+  #chat-panel {
+    height: 75vh;
+  }
+
+  .chat-messages {
+    padding: 12px;
+  }
+
+  .msg {
+    font-size: 0.78rem;
+  }
+}
